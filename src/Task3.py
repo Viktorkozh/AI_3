@@ -100,7 +100,7 @@ def depth_first_recursive_search(problem: Problem, node: Optional[Node] = None) 
     return Node.failure
 
 
-class WordGenerationProblem:
+class WordGenerationProblem(Problem):
     board: List[List[str]]
     dictionary: List[str]
     rows: int
